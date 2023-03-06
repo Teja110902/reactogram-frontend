@@ -1,14 +1,17 @@
 import './Login.css'
 import socialDesktop from '../images/social-desktop.png'
+import socialMobile from '../images/social-mobile.png'
 
 const Login = () => {
     return (
         <div className="container login-container">
             <div className="row">
-                <div className="col-md-7">
-                    <img src={socialDesktop} alt="reactogram picture" />
+                <div className="col-md-7 col-sm-12 d-flex justify-content-center align-items-center">
+                    <img src={socialDesktop} alt="reactogram picture" className="social-desktop-img" />
+
+                    <img src={socialMobile} alt="reactogram picture" className="social-mobile-img" />
                 </div>
-                <div className="col-md-5">
+                <div className="col-md-5 col-sm-12">
                     <div className="card shadow">
                         <div className="card-body px-5">
                             <h4 className="card-title text-center mt-3 fw-bold">Log In</h4>
