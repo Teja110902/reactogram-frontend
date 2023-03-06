@@ -6,7 +6,7 @@ const Login = () => {
         <div className="container login-container">
             <div className="row">
                 <div className="col-md-7">
-                    <img src={socialDesktop} />
+                    <img src={socialDesktop} alt="reactogram picture" />
                 </div>
                 <div className="col-md-5">
                     <div className="card shadow">
@@ -17,8 +17,21 @@ const Login = () => {
 
                                 <input type="password" className="p-2 mb-2 form-control input-bg" placeholder='Password' />
 
-                                <div className="d-grid">
-                                    <button type="submit" className="custom-btn custom-btn-blue" onClick={this}>Log In</button>
+                                <div className="mt-3 d-grid">
+                                    <button className="custom-btn custom-btn-blue" >Log In</button>
+                                </div>
+
+                                <div className="my-4">
+                                    <hr className="text-muted" />
+                                    <h5 className="text-muted text-center">OR</h5>
+                                    <hr className="text-muted" />
+                                </div>
+
+                                <div className="mt-3 mb-5 d-grid">
+                                    <button className="custom-btn custom-btn-white" >
+                                        <span className='text-muted fs-6'>Don't have an account?</span>
+                                        <span className="ms-1 text-info fw-bold">Sign Up</span>
+                                    </button>
                                 </div>
                             </form>
                         </div>
